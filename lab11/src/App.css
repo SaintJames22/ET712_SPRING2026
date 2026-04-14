@@ -1,0 +1,22 @@
+*{box-sizing: border-box;}
+.subtitile{
+  color: blue;
+  font-style: italic;
+  text-align: center;
+}
+img{width: 100%;}
+.introimg{
+  width: 500px;
+  margin: auto;
+  border: ridge 20px blue;
+  
+}
+.footer{
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+/* git add*
+git commit -m "introduction to ReactJS"
+git push origin main
