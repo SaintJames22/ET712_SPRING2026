@@ -1,0 +1,155 @@
+.apptitle {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.apptitle:hover {
+  transform: scale(1.05);
+}
+
+.cards-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 24px;
+  padding: 20px;
+}
+
+.card {
+  border: none;
+  border-radius: 12px;
+  padding: 12px;
+  margin: 0;
+  background: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  max-width: 300px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+}
+
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+.card:hover img {
+  transform: scale(1.05);
+}
+
+.card .content {
+  margin-bottom: 12px;
+  margin-top: 12px;
+}
+
+.card .author {
+  font-weight: 600;
+  color: #667eea;
+  font-size: 1.1rem;
+  transition: color 0.3s ease;
+}
+
+.card:hover .author {
+  color: #764ba2;
+}
+
+.card .metadata {
+  color: #999;
+  font-size: 0.85rem;
+}
+
+.card .metadata .date {
+  font-weight: 500;
+  color: #667eea;
+}
+
+.card .comment {
+  font-style: italic;
+  color: #555;
+  margin-top: 12px;
+  padding: 8px;
+  background: #f8f9fa;
+  border-left: 3px solid #667eea;
+  border-radius: 4px;
+  transition: background 0.3s ease;
+}
+
+.card:hover .comment {
+  background: #e8eaf6;
+}
+
+
+.content {
+  font-size: 1.2rem;
+  color: #333;
+}
+.metadata {
+  color: #777;
+  font-size: 0.9rem;
+}
+
+.feedbackcontainer {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding: 12px 0 0;
+}
+
+.feedbackcard {
+  border: none;
+  border-radius: 12px;
+  padding: 16px;
+  margin: 0;
+  background: #fff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  max-width: 320px;
+  transition: all 0.3s ease;
+}
+.feedbackcard:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 14px 26px rgba(0, 0, 0, 0.14);
+}
+
+.description {
+  color: #444;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  margin: 12px 0 16px;
+}
+
+.addicon {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: #667eea;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.addicon span {
+  font-size: 1rem;
+}
+
+.cardfooter {
+  color: #999;
+  font-size: 0.85rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
