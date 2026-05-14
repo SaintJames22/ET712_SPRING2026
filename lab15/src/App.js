@@ -1,6 +1,7 @@
 
 import './App.css';
 import { useState } from 'react';
+export default App;  
 
 function App() {
   //set a a state to handle on input value
@@ -11,9 +12,10 @@ const [inputs, setInputs] = useState({});
 const submitForm = function(e) {
   e.preventDefault();
   // Handle form submission logic here
-  alert(`Form submitted with name: ${inputs.name}, age: ${inputs.age}, gender: ${gender}, comment: ${textcomment}`);
+  alert(`Form submitted with name: ${inputs.name}, age: ${inputs.age}, gender: ${gender}, comment: ${textcomment}, password: ${password}`);
 };
  //function to collect the key:value pair from all input controls
+
  const handleinputs = function(e) {
   const name = e.target.name
   const age = e.target.value
@@ -30,6 +32,18 @@ const submitForm = function(e) {
  const [gender, selectGender] = useState("");
  const selectedgender = function(e) {
   selectGender(e.target.value);
+ }
+
+ 
+  const [password, setPassword] = useState("");
+  const handlePasswordChange = function(e) {
+    setPassword(e.target.value);
+
+
+
+
+
+    
  }
   return (
     <div className="App">
@@ -50,7 +64,10 @@ const submitForm = function(e) {
           <option value="female">Female</option>
         </select>
       </div>
-
+          <div classname='formcontrol'>
+            <label for="password">Enter your password:</label>
+            <input type="password" id="password" name="password" value={password} onChange={handlePasswordChange} />
+          </div>
           <div classname='formcontrol'>
             <label for="comment">Enter your comment:</label>
             <textarea id="comment" name="comment" value={textcomment} onChange={(e) => setTextcomment(e.target.value)} />
@@ -76,4 +93,4 @@ const submitForm = function(e) {
   );
 }
 
-export default App;
+
